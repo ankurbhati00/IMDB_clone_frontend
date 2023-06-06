@@ -1,0 +1,226 @@
+body{
+    margin: auto;
+    background-color: black;
+}
+.all-content{
+padding: 8px 10%;
+}
+/* ==================NAVBAR====================== */
+nav{
+    display:flex;
+    justify-content: center;
+    
+    background-color: black;
+    font-size: 1.2rem;
+}
+.nav-section-1, .nav-section-2 {
+    display: flex;
+    color:white;
+}
+
+.nav-section-1{
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-section-2{
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.logo{
+    background-color: rgba(255, 255, 0, 0.868);
+    color: black;
+    display:inline-block;
+    width:80px;
+    height: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    text-shadow: 2px;
+    border-radius: 3px;
+}
+
+.watchlist{
+    display: none;
+    margin-left: 20px;
+    border-left: 3px solid rgb(78, 139, 223);
+    padding-left:10px ;
+    border-radius: 2px;
+}
+
+.fa-bars{
+    padding-right: 10px;
+}
+
+#sign-in-btn{
+    background-color: rgba(151, 232, 59, 0.738);
+    padding:4px 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+    font-size: 1.05rem;
+}
+
+/* ======what to watch==========  */
+.movie-card-list{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.movie-card-list::-webkit-scrollbar{
+    display: none;
+}
+.what-to-watch>h1{
+    color:red;
+    
+}
+
+
+.top-picks >h2{
+    color: white;
+    border-left: 4px solid red;
+    padding-left: 5px;
+   
+}
+
+.fa-chevron-right{
+    color: white;
+    margin-left: 20px;
+}
+
+.top-picks p{
+    color: rgb(208, 179, 179);
+}
+
+/* ========movie card========= */
+
+.movie-card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31, 20, 20);
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.movie-card img{
+    height:300px;
+    width: 200px;
+    color: white;
+}
+.fa-star{
+    color:yellow;
+    margin-right: 10px;
+}
+
+#regular-star{
+    color:rgb(122, 122, 187);
+    margin-left: 30px;
+}
+.rating{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+    align-self: self-start;
+}
+
+.movie-name{
+    padding-top: 10px;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+   
+}
+
+.movie-name:hover{
+    text-decoration: underline;
+}
+
+.movie-watchlist{
+background-color: rgb(50, 40, 40);
+width:150px;
+text-align: center;
+padding: 5px;
+border-radius: 3px;
+color: rgb(140, 91, 185);
+font-size: 1.1rem;
+margin-top: 10px;
+}
+
+.trailer{
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    color:white;
+
+}
+.fa-play{
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+/* ==========================RESPONSIVENESS OF NAVBAR======================== */
+
+
+@media screen  and (min-width:768px){
+    .search-bar{
+        width:55%;
+        text-align: end;
+        border-radius: 20px;
+        height: 80%;
+        background-color: white;
+        color:black;
+        font-size: 1.2rem;
+        border: 2px solid black;
+        text-shadow: .2px .2px #558ABB;
+    }
+
+.search-bar input{
+    width:70%;
+}
+
+    .search-bar i{
+        margin: 2%;
+        color: rgb(178, 189, 198);
+    }
+
+    .search-bar:hover{
+        border:2px solid rgb(78, 139, 223);
+        
+    }
+
+    .logo{
+        height:30px;
+        width:90px;
+        font-size: larger;
+        font-weight: 900;
+    }
+
+    .watchlist{
+        display: block;
+    }
+
+  
+    
+}
+
+@media screen and (max-width:425px) {
+    .menu{
+        order: -1;
+    }
+    #menu{
+        display: none;
+    }
+}
